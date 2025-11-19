@@ -1,7 +1,11 @@
 namespace SpriteKind {
     export const Car = SpriteKind.create()
 }
-let Car = sprites.create(img`
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    Car.sayText("I’m a car")
+})
+let Car: Sprite = null
+Car = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . 2 2 2 2 2 . . . . 
